@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheets" href="style2.css">
+    <title>feautre</title>
+    <style>
+        .desktop-nav{
+            background-color: blanchedalmond;
+        }
+        .right{
+            text-align: center;
+            background-color: dimgray;
+        }
+        .socials{
+            background-color:blanchedalmond;
+            padding: 16px;
+        }
+    </style>
+</head>
+<body>
+    <!--NAVIGATION BAR-->
+    <nav id="desktop-nav">
+        <div class="logo">PearlessCucumber</div>
+            <a href="index.html">Home</a>
+            <a href="feature.html">Features</a>
+    </nav>
+                        <!--Sidebar--> 
+    <aside>
+                    <!--Profile-->
+            <section id="profile">
+                <div class="section__pic-container">
+                  <img src="assets/logo.jpg" alt="codm logo" />
+                </div>
+              </section>
+                      <!--Text-->
+             <section id="section__text">
+                <h1>CODM STUDIO</h1>
+                <p class="section__text__p1">Baril para sa taong</p>
+                <p class="section__text__p2">hindi nilambing</p>
+              </section>
+
+              <!---->
+              <section>
+                <div class="intro">
+                    <a href="#front">Home</a>
+                    <a href="#productview">Product list</a>
+                    <a href="#cartlist">Cart List</a>
+                </div>
+              </section>
+
+    </aside> 
+    <!--main content-->
+    <main>
+        <section class="front" id="front">
+            <div>CODM Arsenal</div>
+            <h2>Bili na! Para pag sinakal ka nya, May panglaban ka</h2>
+        </section>
+
+        </p>
+        <h2 class="productLabel">Products</h2>
+        <section class="productview" id="productview">
+            <!--products-->
+            <div class="products">
+            <div class="product">
+                <h2>AK-47</h2>
+                <p>Fully automatic assault rifle. High damage with high recoil.</p>
+                <img src="assets/ak-47.png" height="300px" weight="300px"/>
+                <h3>50,000</h3>
+                <button  onclick="addToCart('AK-47', 50000)" id="buttonadd">add to cart</button>
+                <button  onclick="removeFromCart('AK-47', 50000)" id="buttonrem">remove from cart</button>
+            </div>
+
+            <div class="product">
+                <h2>AK117</h2>
+                <p>Fully automatic assault rifle. High rate of fire.</p>
+                <img src="assets/ak117.png" height="300px" weight="300px"/>
+                <h3>50,000</h3>
+                <button  onclick="addToCart('AK117', 50000)" id="buttonadd">add to cart</button>
+                <button  onclick="removeFromCart('AK117', 50000)" id="buttonrem">remove from cart</button>
+            </div>
+
+            <div class="product">
+                <h2>ASVAL</h2>
+                <p>Fully automatic assault rifle with high fire rate. Effective at medium range.</p>
+                <img src="assets/as-val.png" height="300px" weight="300px"/>
+                <h3>50,000</h3>
+                <button  onclick="addToCart('ASVAL', 50000)" id="buttonadd">add to cart</button>
+                <button  onclick="removeFromCart('ASVAL', 50000)" id="buttonrem">remove from cart</button>
+            </div>
+
+            <div class="product">
+                <h2>ASM10</h2>
+                <p>Fully automatic assault rifle. The first three rounds of burst are fired at a higher accuracy.</p>
+                <img src="assets/asm10.png" height="300px" weight="300px"/>
+                <h3>50,000</h3>
+                <button  onclick="addToCart('ASM10', 50000)" id="buttonadd">add to cart</button>
+                <button  onclick="removeFromCart('ASM10', 50000)" id="buttonrem">remove from cart</button>
+            </div>
+             <div class="product">
+                <h2>DR-H</h2>
+                <p>Large caliber, fully automatic assault rifle that provides high damage over long ranges.</p>
+                <img src="assets/dr-h.png" height="300px" weight="300px"/>
+                <h3>50,000</h3>
+                <button  onclick= "addToCart('DR-H', 50000)" id="buttonadd">add to cart</button>
+                <button  onclick= "removeFromCart('DR-H', 50000)" id="buttonrem">remove from cart</button>
+            </div>
+
+            <div class="product">
+                <h2>ICR-1</h2>
+                <p>Fully automatic assault rifle. Modest damage and minimal recoil.</p>
+                <img src="assets/icr-1.png" height="300px" weight="300px"/>
+                <h3>50,000</h3>
+                <button  onclick="addToCart('ICR-1', 50000)" id="buttonadd">add to cart</button>
+                <button  onclick="removeFromCart('ICR-1', 50000)" id="buttonrem">remove from cart</button>
+            </div>
+
+            <div class="product">
+                <h2>KILO-141</h2>
+                <p> Assault rifle with an extremly high fire rate and strong headshot multiplier.</p>
+                <img src="assets/kilo-141.png" height="300px" weight="300px"/>
+                <h3>50,000</h3>
+                <button  onclick="addToCart('KILO-141', 50000)" id="buttonadd">add to cart</button>
+                <button  onclick="removeFromCart('KILO-141', 50000)" id="buttonrem">remove from cart</button>
+            </div>
+
+            <div class="product">
+                <h2>M4</h2>
+                <p>Fully automatic assault rifle. Medium range with high accuracy.</p>
+                <img src="assets/m4.png" height="300px" weight="300px"/>
+                <h3>50,000</h3>
+                <button  onclick="addToCart('M4', 50000)" id="buttonadd">add to cart</button>
+                <button  onclick="removeFromCart('M4', 50000)" id="buttonrem">remove from cart</button>
+            </div>
+
+            <div class="product">
+                <h2>M13</h2>
+                <p>Assault rifle with an extremly high fire rate and strong headshot multiplier.</p>
+                <img src="assets/m13.png" height="300px" weight="300px"/>
+                <h3>50,000</h3>
+                <button  onclick="addToCart('M13', 50000)" id="buttonadd">add to cart</button>
+                <button  onclick="removeFromCart('M13', 50000)" id="buttonrem">remove from cart</button>
+            </div>
+
+            <div class="product">
+                <h2>M16</h2>
+                <p>Semi-automatic with three round burst fire. Effective at medium to long range.</p>
+                <img src="assets/m16.png" height="300px" weight="300px"/>
+                <h3>50,000</h3>
+                <button  onclick="addToCart('M16', 50000)" id="buttonadd">add to cart</button>
+                <button  onclick="removeFromCart('M16', 50000)" id="buttonrem">remove from cart</button>
+            </div>
+            
+            <div class="product">
+                <h2>MAN-O-WAR</h2>
+                <p>Fully automatic assault rifle. Slow rate of fire with high damage.</p>
+                <img src="assets/man-o-war.png" height="300px" weight="300px"/>
+                <h3>50,000</h3>
+                <button  onclick="addToCart('MAN-O-WAR', 50000)" id="buttonadd">add to cart</button>
+                <button  onclick="removeFromCart('MAN-O-WAR', 50000)" id="buttonrem">remove from cart</button>
+            </div>
+
+            <div class="product">
+                <h2>TYPE-25</h2>
+                <p>Fully automatic assault rifle. High rate of fire with moderate recoil.</p>
+                <img src="assets/type-25.png" height="300px" weight="300px"/>
+                <h3>50,000</h3>
+                <button  onclick="addToCart('TYPE-25', 50000)" id="buttonadd">add to cart</button>
+                <button  onclick="removeFromCart('TYPE-25', 50000)" id="buttonrem">remove from cart</button>
+            </div>
+            
+            </div>
+            </div>
+        </section>
+    </main>
+   <!-- <section class="cartlist" id="cartlist">
+        <div class="wholelist">
+            <h2>Cart List</h2>
+            <div class="cart">
+                <h2>Cart List</h2>
+                <div><img src="assets/type-25.png"></div>
+                <div>NAME: TYPE-25</div>
+                <div>COST: 50000</div>
+                <DIV class="listCart">
+                    <span class="minus">></span>
+                    <span>1</span>
+                    <span class="add"><</span>
+                </DIV>
+            </div>
+        </div>
+    </section>-->
+        <!-- Cart List -->
+        <section class="cartlist" id="cartlist">
+            <div class="wholelist">
+                <h2>Cart List</h2>
+                <div class="cart">
+                    <p>Your cart is empty.</p> <!-- Default message -->
+                </div>
+            </div>
+        </section>
+    <!--Footer-->
+    <footer>
+          <!--Copyright-->
+            <p class="right">Copyright &#169; 2025 Mae Ibeng. All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
