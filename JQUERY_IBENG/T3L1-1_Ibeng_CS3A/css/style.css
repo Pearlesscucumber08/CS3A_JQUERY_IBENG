@@ -1,0 +1,87 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+/* body */
+body {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+/* Form*/
+.form {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;   
+}
+
+.form h4 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #284aa7; 
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.emailInput,
+.passwordInput,
+.nameInput,
+.numberInput,
+.nickInput
+{
+    margin-bottom: 15px ;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.top-card {
+
+}
+
+/* Button */
+.submit {
+    width: 100%;
+    padding: 10px;
+    background: #284aa7;
+    border: none;
+    color: white;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.submit:hover {
+    background: #3570bd;
+}
+
+/* Footer*/
+footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
