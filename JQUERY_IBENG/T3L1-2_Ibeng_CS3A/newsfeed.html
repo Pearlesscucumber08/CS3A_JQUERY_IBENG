@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BHRYMES</title>
+  <link rel="stylesheet" href="css/styless.css" />
+</head>
+<body>
+  <!-- nav bar -->
+  <header>
+    <h1>BHRYMES</h1>
+    <nav>
+      <a href="home.html">HOME</a>
+      <a href="newsfeed.html" class="active">FYP</a>
+      <a href="love.html">LOVE</a>
+      <a href="#" id="logoutBtn" onclick="showLogoutModal()">LOGOUT</a>
+    </nav>
+  </header>
+<!-- posts -->
+  <main>
+    <!-- first post -->
+    <div class="post">
+      <!-- user details -->
+      <div class="user-info">
+        <img src="resources/photo_6087031697653744603_x.jpg" alt="Sammy" class="pfp" />
+        <div>
+          <p class="username">@Sammyboi</p>
+          <p class="name">Sammy Ping-ay</p>
+        </div>
+      </div>
+      <!-- post section -->
+      <div class="post-content">
+        <div class="content-wrapper">
+          <img src="resources/tpost.jpg" alt="post" class="post-image" />
+          <div class="quote">
+            In the long run, we shape our lives, and we shape ourselves. The process never ends until we die. And the choices we make are ultimately our own responsibility. — Eleanor Roosevelt
+          </div>
+        </div>
+        <!-- like section -->
+        <div class="actions">
+          <span>❤️ 100 likes</span>
+          <span>💬 100 comments</span>
+          <span> 10 shares</span>
+        </div>
+      </div>
+    </div>
+    <!-- second post -->
+    <div class="post">
+      <!-- user details -->
+      <div class="user-info">
+        <img src="resources/rhovic.jpg" alt="Rhovic" class="pfp" />
+        <div>
+          <p class="username">@Batangyagit</p>
+          <p class="name">Rhovic Queddeng</p>
+        </div>
+      </div>
+      <!-- post content -->
+      <div class="post-content">
+        <div class="content-wrapper">
+          <img src="resources/photo_6087031697653744603_x.jpg" alt="post" class="post-image" />
+          <div class="quote">Another inspiring post here...</div>
+        </div>
+        <!-- like section -->
+        <div class="actions">
+          <span>🖤 50 likes</span>
+          <span>💬 25 comments</span>
+          <span> 5 shares</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="logoutModal" class="modal">
+    <div class="modal-content">
+      <p>Are you sure you want to logout?</p>
+      <div class="modal-buttons">
+        <button id="confirmLogout">Yes</button>
+        <button id="cancelLogout">No</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

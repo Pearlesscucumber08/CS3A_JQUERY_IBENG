@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home - BHRYMES</title>
+  <link rel="stylesheet" href="css/styless.css" />
+</head>
+<body>
+  <header>
+    <!-- navbar -->
+     <!-- social media name -->
+    <h1>BHRYMES</h1>
+    <nav>
+      <!-- fyp -->
+      <a href="#" class="active">HOME</a>
+      <a href="newsfeed.html">FYP</a>
+      <a href="#">LOVE</a>
+      <a href="#" id="logoutBtn" onclick="showLogoutModal()">LOGOUT</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- sample post-->
+       <!-- first post -->
+    <div class="post">
+      <!-- user details -->
+      <div class="user-info">
+        <img src="resources/prof.jpg" alt="Sammy" class="pfp" />
+        <div>
+          <p class="username">@MAE</p>
+          <p class="name">Brigitte Ibeng</p>
+        </div>
+      </div>
+      <!-- post section -->
+      <div class="post-content">
+        <div class="content-wrapper">
+          <img src="resources/mypost.jpg" alt="post" class="post-image" />
+          <div class="quote">
+           at Marand Resort & Spa.  Baccuit Sur, Bauang, La Union Experience Luxury in Nature”,“Unwind in Style”, “Discover Your Perfect Getaway”, “Relax and Recharge”, “Find Your Bliss”, “Where Memories Are Made”, “Your Dream Destination”, “Adventure Awaits”, “Discover Serenity”, “Luxury at Its Best”“Unforgettable Escapes”, “Find Your Zen”, “Paradise Awaits You”, “Surrender to Nature’s Beauty”, “Experience the Best of Both Worlds”, “The Ultimate Escape”, “A Place Like No Other” “Where Time Stands Still”, “Retreat to Tranquility” </div>
+        </div>
+        <!-- like section -->
+        <div class="actions">
+          <span>❤️ 100 likes</span>
+          <span>💬 100 comments</span>
+          <span> 10 shares</span>
+        </div>
+      </div>
+    </div>
+    <!-- Post creation form -->
+  <div class="post-form">
+    <h2>Create a Post</h2>
+    <form id="newPostForm">
+      <input type="file" id="imageUpload" accept="image/*" required />
+      <textarea id="quote" placeholder="Write your quote..." required></textarea>
+      <button type="submit">Post</button>
+    </form>
+  </div>
+
+   <!-- logout setting -->
+  <div id="logoutModal" class="modal">
+    <div class="modal-content">
+      <p>Are you sure you want to logout?</p>
+      <div class="modal-buttons">
+        <button id="confirmLogout">Yes</button>
+        <button id="cancelLogout">No</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
